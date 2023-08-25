@@ -1,0 +1,83 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+.contenedor{
+    max-width: 90%;
+    margin: 0 auto;
+}
+body{
+    font-size: 16px;
+    background-color: bisque;
+}
+.titulo{
+    border: solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.titulo h1{
+    margin-bottom: 0rem;
+    text-transform: uppercase;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    width: 100%;    
+}
+.titulo h2{
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#contorno-chess{
+    border: solid red;
+}
+.modo_chess{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+    margin: 3rem;
+}
+.boton_modo{
+    padding: 1.5rem 2rem;
+    background-color: rgb(245, 214, 186);
+}
+.boton_modo:hover{
+    background-color: yellow;
+    cursor: pointer;
+    padding: 2rem 2.5rem;
+}
+.chess{
+    border:solid yellow ;
+    display:flex;
+    justify-content: center;
+    margin: 5rem 0rem;
+}
+.chess-casillas{
+    border: solid;
+    display: grid;
+    grid-template-columns:repeat(8,60px);
+    grid-template-rows: repeat(8,60px);
+    border-color: blueviolet;
+}
+.casillas{
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(187, 161, 98);
+}
+.casillas:nth-child(2n):nth-child(-n+9),
+.casillas:nth-child(2n+9):nth-child(-n+16),
+.casillas:nth-child(2n+18):nth-child(-n+24),
+.casillas:nth-child(2n+25):nth-child(-n+32),
+.casillas:nth-child(2n+34):nth-child(-n+40),
+.casillas:nth-child(2n+41):nth-child(-n+47),
+.casillas:nth-child(2n+50):nth-child(-n+56),
+.casillas:nth-child(2n+57):nth-child(-n+64){
+    background-color: rgb(104, 84, 32);
+}
+
+.remover{
+    display: none;
+}
