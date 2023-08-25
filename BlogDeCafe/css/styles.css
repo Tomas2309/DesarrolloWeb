@@ -1,0 +1,259 @@
+:root{
+    --fuente1: 'Ubuntu', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    line-height: 2;
+    font-size: 1.6rem;
+    font-family: var(--fuente1);
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+/*GLOBALES*/
+.contenedor{
+    max-width: 100rem;
+    width: 90%;
+    margin: 0 auto;  
+}
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.2rem;
+}
+img{
+    width: 100%;
+}
+
+/*UTILIDADES*/
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
+/*HEADER*/
+.header{
+    background-image: url(../img/banner.jpg); 
+    height: 50rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.header_texto{
+    color: white;
+    margin-top: 5rem;
+}
+@media (min-width:768px) {
+    .header{
+        height: 60rem;
+    }
+    .header_texto{
+        margin-top: 15rem;
+    }
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.logo{
+    color: white;
+}
+.logo_nombre{
+    font-weight: 400;
+    margin: auto;
+}
+.logo_bold{
+    font-weight: 700;
+}
+@media (min-width:768px) {
+    .navegacion{
+        display: flex;
+        gap:2rem;
+    }
+}
+.navegacion_enlace{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+/*BLOG*/
+.articulo h3{
+    margin: 2rem 0;
+}
+
+.articulo_titulo{
+    margin: 0rem auto;
+}
+.articulo_boton{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.7rem;
+    margin-bottom: 5rem;
+}
+/*ASIDE*/
+.aside_grupo{
+    border-bottom: solid rgba(135, 131, 131, 0.686);
+}
+.aside h3{
+    margin: 1.5rem auto;
+    line-height: 3rem;
+}
+.aside_grupo h4{
+    line-height: 3rem;
+    margin-top: 5rem;
+}
+.aside_grupo_lista{
+    list-style: none;
+    padding-left: 0rem;
+}
+.aside_boton{
+    display: block;
+    color: white;
+    background-color: rgb(115, 41, 11);
+    text-transform: uppercase;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.aside_grupo:last-of-type{
+    border: none;
+}
+.footer{
+    font-size: 3rem;
+}
+@media (min-width:768px) {
+    .aside_boton{
+        display: inline-block;
+    }
+    .blog{
+        display: grid;
+        grid-template-columns:3fr 1fr
+    }
+}
+.articulo h3, .aside h3{
+    font-weight: bold;
+}
+/*FOOTER*/
+.footer{
+    background-color: black;
+}
+@media (max-width:768px) {
+    .navegacion2{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    } 
+}
+.barra{
+    column-gap: 5rem;
+}
+.navegacion_enlace2{
+    color: white;
+    font-size: 2rem;
+    padding: 0.4rem;
+    border: solid white;
+    border-radius: 1rem;    
+}
+/*NOSOTROS*/
+.body{
+    margin: 7rem auto;
+}
+.nosotros{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    margin-bottom: 8rem;
+}
+.nosotros_imagen{
+    background-image: url(../img/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.nosotros_texto{
+    line-height: 2.5rem;
+}
+@media(min-width:768px){
+    .nosotros{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: none;
+        column-gap: 2rem;
+    }
+}
+/*CURSOS*/
+
+@media(min-width:768px){
+    .cursos_grupo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-bottom: 2rem;
+        column-gap: 2rem;
+    }
+    .cursos_imagen1{
+        padding: 0rem;
+    }
+}
+
+
+@media(max-width:768px){
+    .cursos_imagen1 img{
+     background-size: cover;
+     background-repeat: no-repeat;
+     width: 40rem;
+     height: 45rem;
+    }
+}
+/*CONTACTO*/
+.contacto{
+    display: block;
+}
+.contacto-formulario{
+    background-color: white;
+    display: inline-block;
+    width: 90%;
+    margin: -5rem 5% 5rem 5%;
+    padding: 4rem;
+}
+.contacto-formulario div{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.contacto-formulario div label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.contacto-formulario input,.contacto-formulario textarea{
+    flex: 1;
+    border: 1px solid rgb(226, 203, 203);
+}
+.contacto-formulario textarea{
+    height: 20rem;
+}
+.contacto-formulario .submit:hover{
+    background-color: rgb(10, 159, 234);
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 0.7rem;
+}
