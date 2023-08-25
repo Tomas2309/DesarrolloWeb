@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tomasa Videojuegos</title>
+</head>
+
+<body class="contenedor">
+    <nav class="nav-usuario"><!------NAV SUPERIOR------->
+        <div class="carrito">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="44"
+                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="6" cy="19" r="2" />
+                <circle cx="17" cy="19" r="2" />
+                <path d="M17 17h-11v-14h-2" />
+                <path d="M6 5l14 1l-1 7h-13" />
+            </svg>
+            <div class="fondo">
+                <p class="carrito-fondo"></p>
+                <p class="carrito-cantidad">0</p>
+            </div>
+        </div>
+        <div class="header-contenedor-titulo">
+            <h1 class="header-titulo">Tomasa <span>Videojuegos</span></h1>
+        </div>
+        <a class="acceso" href="inicio-sesion.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="44" height="44"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="12" cy="7" r="4" />
+                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+            </svg>
+            <p>Inicie Sesion</p>
+        </a>
+    </nav>
+    <header class="header"><!------HEADER VIDEOJUEGO------->
+        <video src="Videos/The Last of Us Parte I - Tráiler.mp4#t=6"autoplay loop muted class="video-header contenedor"></video>
+    </header>
+    <nav class="nav-buscador"><!------NAV BUSCADOR------->
+        <div class="buscador">
+            <input type="text" id="buscador-input" size='80' placeholder="Fifa 23, Call of Duty,...">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="44" height="44"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+            </svg>
+        </div>
+    </nav>
+    <div class="contenido-principal">
+        <section class="categorias">
+                <h3 class="categorias-subtitulos">Categorias</h3>
+                <form action="" class="categorias-filtros">
+                    <div>
+                        <label class="categorias-filtros-label tilde-accion">
+                            <input type="checkbox" class="categorias-filtros-input" id="accion">Accion
+                        </label>
+                        <label class="categorias-filtros-label tilde-deportes">
+                            <input type="checkbox" class="categorias-filtros-input" id="deportes">Deportes
+                        </label>
+                        <label class="categorias-filtros-label tilde-terror">
+                            <input type="checkbox" class="categorias-filtros-input" id="terror">Terror
+                        </label>
+                        <label class="categorias-filtros-label tilde-infantil">
+                            <input type="checkbox" class="categorias-filtros-input" id="infantil">Infantil
+                        </label>
+                        <label class="categorias-filtros-label tilde-musica">
+                            <input type="checkbox" class="categorias-filtros-input" id="musica">Musica
+                        </label>
+                        <label class="categorias-filtros-label tilde-adultos">
+                            <input type="checkbox" class="categorias-filtros-input" id="adultos">Adultos
+                        </label>
+                        <label class="categorias-filtros-label tilde-aventura">
+                            <input type="checkbox" class="categorias-filtros-input" id="aventura">Aventura
+                        </label>
+                    </div>
+                </form>
+                <h3 class="categorias-subtitulos">Consola</h3>
+                <form action="" class="categorias-filtros">
+                    <div>
+                        <label class="categorias-filtros-label">
+                            <input type="checkbox" class="categorias-filtros-input" id="ps5">PS5
+                        </label>
+                        <label class="categorias-filtros-label">
+                            <input type="checkbox" class="categorias-filtros-input" id="ps4">PS4
+                        </label>
+                        <label class="categorias-filtros-label">
+                            <input type="checkbox" class="categorias-filtros-input" id="ps3">PS3
+                        </label>
+                        <label class="categorias-filtros-label">
+                            <input type="checkbox" class="categorias-filtros-input" id="xboxone">XBOX ONE
+                        </label>
+                        <label class="categorias-filtros-label">
+                            <input type="checkbox" class="categorias-filtros-input" id="xbox360">XBOX 360
+                        </label>
+                        <label class="categorias-filtros-label">
+                            <input type="checkbox" class="categorias-filtros-input" id="PC">PC
+                        </label>
+                    </div>
+                    <div class="contenedor-submit">
+                        <button type="submit" class="submit">Buscar</button>
+                    </div>
+                </form>
+        </section>
+        <div class="portada-publicaciones">            
+            <section class="contenedor-portada">
+            </section>
+            <section class="publicaciones">
+                <div class="ordenar-productos">
+                    <p>Ordenar por</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-down" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="12" y1="5" x2="12" y2="19" />
+                        <line x1="18" y1="13" x2="12" y2="19" />
+                        <line x1="6" y1="13" x2="12" y2="19" />
+                    </svg>
+                </div>
+                <section class="grid">
+                    <a href="info.html" class="productos deportes" name="pagina1">
+                        <div class="imagenes-producto">
+                            <img src="img/productos/f122-ps4.jpg" alt="" sizes="" srcset="">
+                        </div>
+                        <div class="nombre-consola">
+                            <p class="nombre-producto">Formula 1 2022</p>
+                            <p class="consola-producto ps4">PS4</p>
+                        </div>
+                        <p class="precio-producto">$15.000</p>
+                        <button class="comprar-producto">Comprar</button>
+                    </a>
+                    <a href="info.html" class="productos deportes">
+                        <div class="imagenes-producto">
+                            <img src="img/productos/fifa23-ps4.png" alt="" sizes="" srcset="">
+                        </div>
+                        <div class="nombre-consola">
+                            <p class="nombre-producto">Fifa 23</p>
+                            <p class="consola-producto ps4">PS4</p>
+                        </div>
+                        <p class="precio-producto">$20.000</p>
+                        <button class="comprar-producto">Comprar</button>
+                    </a>
+                    <a href="info.html" class="productos accion aventura">
+                        <div class="imagenes-producto">
+                            <img src="img/productos/callofduty-ps4.jpg" alt="">
+                        </div>
+                        <div class="nombre-consola">
+                            <p class="nombre-producto">Call Of Duty</p>
+                            <p class="consola-producto ps4">PS4</p>
+                        </div>
+                        <p class="precio-producto">$18.000</p>
+                        <button class="comprar-producto">Comprar</button>
+                    </a>
+                    <a href="info.html" class="productos infantil aventura">
+                        <div class="imagenes-producto">
+                            <img src="img/productos/crash-ps4.jpg" alt="">
+                        </div>
+                        <div class="nombre-consola">
+                            <p class="nombre-producto">Crash</p>
+                            <p class="consola-producto ps4">PS4</p>
+                        </div> 
+                        <p class="precio-producto">$12.000</p>
+                        <button class="comprar-producto">Comprar</button>
+                    </a>
+                    <a href="info.html" class="productos accion aventura">
+                        <div class="imagenes-producto">
+                            <img src="img/productos/horizon-ps5.webp" alt="">
+                        </div>
+                        <div class="nombre-consola">
+                            <p class="nombre-producto">Horizon</p>
+                            <p class="consola-producto ps5">PS5</p>
+                        </div>
+                        <p class="precio-producto">$20.000</p>
+                        <button class="comprar-producto">Comprar</button>
+                    </a>
+                    <a href="info.html" class="productos accion infantil aventura">
+                        <div class="imagenes-producto">
+                            <img src="img/productos/SpidermanMM-ps4.jpg" alt="">
+                        </div>
+                        <div class="nombre-consola">
+                            <p class="nombre-producto">Spider-Man Miles</p>
+                            <p class="consola-producto ps4">PS4</p>
+                        </div>
+                        <p class="precio-producto">18.000</p>
+                        <button class="comprar-producto">Comprar</button>
+                    </a>
+                    <a href="info.html" class="productos infantil">
+                        <div class="imagenes-producto">
+                            <img src="img/productos/minecraft-ps4.jpg" alt="">
+                        </div>
+                        <div class="nombre-consola">
+                            <p class="nombre-producto">Minecraft</p>
+                            <p class="consola-producto ps4">PS4</p>
+                        </div>
+                        <p class="precio-producto">$11.000</p>
+                        <button class="comprar-producto">Comprar</button>
+                    </a>
+                    <a href="info.html" class="productos infantil accion">
+                        <div class="imagenes-producto">
+                            <img src="img/productos/dbz-xboxone.jpg" alt="">
+                        </div>
+                        <div class="nombre-consola">
+                            <p class="nombre-producto">Dragon Ball Z</p>
+                            <p class="consola-producto xboxone">XBOX ONE</p>
+                        </div>
+                        <p class="precio-producto">$10.000</p>
+                        <button class="comprar-producto">Comprar</button>
+                    </a>
+                    <a href="info.html" class="productos accion aventura">
+                        <div class="imagenes-producto">
+                            <img src="img/productos/unchated4-ps4.jpg" alt="">
+                        </div>
+                        <div class="nombre-consola">
+                            <p class="nombre-producto">Uncharted 4</p>
+                            <p class="consola-producto ps4">PS4</p>
+                        </div>
+                        <p class="precio-producto">$16.000</p>
+                        <button class="comprar-producto">Comprar</button>
+                    </a>
+                    <a href="info.html" class="productos accion terror aventura adultos">
+                        <div class="imagenes-producto">
+                            <img src="img/productos/thelastofus-ps4.jpg" alt="">
+                        </div>
+                        <div class="nombre-consola">
+                            <p class="nombre-producto">The Last Of Us 2</p>
+                            <p class="consola-producto ps4">PS4</p>
+                        </div>
+                        <p class="precio-producto">$25.000</p>
+                        <button class="comprar-producto">Comprar</button>
+                    </a>
+                    <a href="info.html" class="productos accion terror adultos">
+                        <div class="imagenes-producto">
+                            <img src="img/productos/demonsouls-ps5.jpg" alt="">
+                        </div>
+                        <div class="nombre-consola">
+                            <p class="nombre-producto">Demo Souls</p>
+                            <p class="consola-producto ps5">PS5</p>
+                        </div>
+                        <p class="precio-producto">$23.000</p>
+                        <button class="comprar-producto">Comprar</button>
+                    </a>
+                    <a href="info.html" class="productos infantil accion">
+                        <div class="imagenes-producto">
+                            <img src="img/productos/narutouns4-ps4.jpg" alt="">
+                        </div>
+                        <div class="nombre-consola">
+                            <p class="nombre-producto">Naruto UNS4</p>
+                            <p class="consola-producto ps4">PS4</p>
+                        </div>
+                        <p class="precio-producto">$11.000</p>
+                        <button class="comprar-producto">Comprar</button>
+                    </a>
+                </section>
+            </section>
+        </div>
+    </div>
+    <div class="nueva-pagina">
+        <a href="index.html#pagina1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left flechaizq" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <line x1="5" y1="12" x2="11" y2="18" />
+                <line x1="5" y1="12" x2="11" y2="6" />
+            </svg>
+        </a>
+        <a href="index2.html#pagina2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right flechader" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <line x1="13" y1="18" x2="19" y2="12" />
+            <line x1="13" y1="6" x2="19" y2="12" />
+            </svg>
+        </a>
+        <a href="index.html#pagina1" class="paginas">1</a>
+        <a href="index2.html#pagina2" class="paginas">2</a>
+    </div>
+    <section class="contenido-principal2">
+        <h2>Quizas te pueden interesar</h2>
+        <section class="contenido-principal2-imagenes">
+            <div>
+                <img src="img/productos/thelastofus-ps4.jpg" alt="">
+                <p>The Last Of Us</p>
+            </div>
+            <div>
+                <img src="img/productos/demonsouls-ps5.jpg" alt="">
+                <p>Demon Souls</p>
+            </div>       
+            <div>
+                <img src="img/productos/narutouns4-ps4.jpg" alt="">
+                <p>Naruto UNS4</p>
+            </div>
+            <div>
+                <img src="img/productos/dbz-ps4.jpg" alt="">
+                <p>Dragon Ball Z</p>
+            </div>
+        </section>
+    </section>
+    <article class="article-propaganda">
+        <div class="propagada">
+            <img src="img/NEWORO-Publicidad.png" alt="">
+        </div>
+    </article>
+    <footer class="footer">
+        <div class="footer-one">
+            <p class="contacto-texto">Contacto</p>
+            <div class="contacto-logos">
+                <a href="https://wa.me/+5491155768026">
+                    <img src="img/logo-whatsapp.svg" alt="Whats App">
+                </a>
+                <a href="#">
+                    <img src="img/logo-gmail.svg" alt="Gmail">
+                </a>
+            </div>
+            <p id="footer-horario">Lunes a Viernes de 9hs a 18hs</p>
+        </div>
+        <div class="footer-two">
+            <p>Tomasa Videojuegos, todos los derechos reservados</p>
+        </div>
+        <div class="footer-three">
+            <p class="contacto-texto">Redes Sociales</p>
+            <div class="contacto-logos">
+            <a href="#">
+                <img src="img/facebook.svg" alt="Facebook">
+            </a>
+            <a href="#"> 
+                <img src="img/instagram.svg" alt="Instagram">
+            </a>
+            <a href="#">
+                <img src="img/twitter.svg" alt="Twitter">
+            </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js.js"></script>
+</body>
+</html>
