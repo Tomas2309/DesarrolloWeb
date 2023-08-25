@@ -1,0 +1,65 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:30% 0%;
+    background-attachment: fixed;
+    font-size: 16px;
+    display: flex;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+.formulario{
+    background-color: rgb(229, 111, 14);
+    margin:1.5rem auto auto auto;
+    padding: 2rem;
+    min-height: 40rem;
+    border-radius: 2rem;
+    border:solid  rgb(9, 9, 136) 0.5rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+}
+.formulario div{
+    margin: auto 4rem;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.formulario label{
+    flex: 0 0 11rem;
+}
+.formulario .items{
+    min-width: 80%;
+    padding: 0.7rem;
+}
+.submit{
+    color: white;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right,rgb(20, 10, 174) 0%,#0d0c62 100%);
+    margin: 2rem auto auto auto;
+    width: 70%;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.divi2{
+    justify-content: end;
+    width: 20rem;
+    margin: 0 auto;
+}
+.alerta{
+    background-color: rgb(65, 208, 65);
+    text-align: center;
+    padding: 1rem;
+}
+.error{
+    background-color: rgb(255, 4, 4);
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form class="formulario">
+        <main class="divi">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" class="items">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" class="items">
+            </div>
+            <div>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" min="1" max="100" class="items">
+            </div>
+            <div>
+                <label for="nacionalidad">Nacionalidad</label>
+                <input type="text" id="nacionalidad" class="items">
+            </div>
+            <div>
+                <label for="horario">Horario</label>
+                <input type="time" id="horario" class="items">
+            </div>
+            <div>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" cols="50" rows="10" class="items"></textarea>
+            </div>
+        </main>
+        <main class="divi2">
+            <input type="submit" value="Enviar" class="submit">
+        </main>
+     </form>   
+
+<script src="js.js"></script>
+</body>
+</html>
