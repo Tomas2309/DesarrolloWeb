@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo de Tenis</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css" as="style">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css"as="style">
+</head>
+<body class="contenedor">
+    <nav class="nav">
+        <a href="index.html" class="nav_a">Inicio</a>
+        <a href="informacion.html" class="nav_a">Informacion</a>
+        <a href="torneos.html" class="nav_a">Torneos</a>
+        <a href="ranking.html" class="nav_a">Ranking</a>
+        <a href="calendario.html" class="nav_a">Calendario</a>
+        <a href="index.html#ubicacion" class="nav_a">Sedes</a>
+        <a href="inscripcion.html" class="nav_a">Inscripcion</a>
+        <a href="partidos.html" class="nav_a">Partidos</a>
+    </nav>
+    <h3 class="inscripcion-titulo">Torneo 1</h3>
+    <main class="inscripcion-contenido">
+        <div class="inscripcion-cupos"><!------------1------------------>
+            <div class="inscripcion-cupos-interior">
+                <p>Cupos disponibles</p>
+                <p id="cupos-interior-cantidad">23</p>
+            </div>
+        </div>
+        <form class="inscripcion-formulario"><!----------2-------------->
+            <div class="formulario-item">
+                <label class="label" for="nombre">Nombre</label>
+                <input type="text"id="nombre">
+            </div>
+            <div class="formulario-item">
+                <label class="label" for="apellido">Apellido</label>
+                <input type="text" id="apellido">
+            </div>
+            <div class="formulario-item">
+                <label class="label" for="edad">Edad</label>
+                <input type="number" min="18" id="edad">
+            </div>
+            <div class="formulario-item">
+                <label class="label" for="altura">Altura</label>
+                <input type="text" min="0" id="altura">
+            </div>
+            <div class="formulario-item">
+                <label class="label" for="peso">Peso</label>
+                <input type="number" min="0" id="peso">
+            </div>
+            <div class="formulario-item">
+                <label class="label" for="dni">Documento</label>
+                <input type="number" id="dni">
+            </div>
+            <div class="formulario-item">
+                <label class="label" for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+            <div class="formulario-item formulario-dias">
+                <label class="label" for="dias">Dias para jugar</label>
+                <div class="formulario-item-checkbox">
+                    <input type="checkbox" value="1" name="lunes" id="">Lunes
+                    <br>
+                    <input type="checkbox" value="2" name="martes" id="">Martes
+                    <br>
+                    <input type="checkbox" value="3" name="miercoles" id="">Miercoles
+                    <br>
+                    <input type="checkbox" value="4" name="jueves" id="">Jueves
+                    <br>
+                    <input type="checkbox" value="5" name="viernes" id="">Viernes
+                    <br>
+                    <input type="checkbox" value="6" name="sabado" id="">Sabado
+                    <br>
+                    <input type="checkbox" value="7" name="domingo" id="">Domingo
+                </div>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Inscribite" id="submit">
+            </div>
+        </form>
+        <div class="inscripcion-torneo"> <!-----------3----------------->
+            <aside class="torneo">
+                <div class="contorno-imagen">
+                    <div class="imagen-torneo"></div>
+                </div>                
+                    <p class="torneo-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, totam. Nobis dolor, debitis sit molestiae illum, earum a vel non magnam</p>
+            </aside>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-contenido1">
+                <p>Seguinos para mas informacion en:</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                  </svg>
+            </div>
+            <div class="footer-contenido2">
+                <div class="footer-contactos">
+                    <a href="mailto:tomasignaguirre@gmail.com">
+                        <img src="imagenes/logo-gmail.svg" width="40" alt="">
+                    </a>
+                    <a href="https://wa.me/+5491555768026">
+                        <img src="imagenes/logo-whatsapp.svg" width="40" alt="">
+                    </a>
+                </div>
+            </div>
+            <p class="footer-contenido3">Asociacion Tomas Aguirre de Tenis, todos los derechos reservados 2022</p>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
