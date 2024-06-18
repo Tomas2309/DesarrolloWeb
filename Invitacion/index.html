@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./sol.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Tomy</title>
+</head>
+<body>
+    <h1>Invitacion 07-06-2024</h1>
+    <div id="foto" src="img.jpg" alt="">
+        <form netlify post="inde">
+            <fieldset class="form" style="background-color: rgba(240, 255, 255, 0.501);">
+                <p id="subtitulo">Para la Srta. Emmy <div id="perrito"></div></p>
+                <p>Emmy, muchisimas gracias por ingresar al link que te comparti.</p>
+                <p>Se me ocurrio realizar esta invitacion porque <strong>me gustaria invitarte a salir algun fin de semana</strong></p>
+                <p>Va de onda, disculpas de antemano si te incomode. No es mi intencion y te pido disculpas de corazon</p>
+                <p>Necesitaba practicar las herramientas del desarrollo web, pero realmente es una excusa para poder escribirte (aunque me re sirve para incorporar contenido y para los examenes JAJAJA)</p>
+                <p>Respondas lo que respondas va a estar bien jaja</p>
+                <p>Si es posible, me podrias responder a traves del formulario? Asi pruebo la base de datos que hice jaja. Otra vez me disculpo si me desubique. Saludos y que tengas un lindo dia!!</p>
+                <h3>Respuesta:</h3>
+                <label for="">SI</label>
+                <input type="checkbox" name="SI" id="yes" class="n" onclick="avisar()">
+                <label for="">NO</label>
+                <input type="checkbox" name="NO" id="nono" class="n" onclick="avisar()">
+                <div id="emoji"></div>
+                <br>
+                <textarea id="mensaje" name="mensaje" cols="30" rows="6" placeholder="Algun comentario de la pagina o de la invitacion jaja?"></textarea>
+                <br>
+                <input id="enviar" type="submit"value="ENVIAR">
+                <input type="hidden" name="_captcha" value="false">
+            </fieldset>
+        </form>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
